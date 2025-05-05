@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Certificate Lightbox
+  // Certificate Lightbox (works for both certificates & work experience)
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const closeLightbox = document.querySelector('.close-lightbox');
@@ -70,4 +70,16 @@ document.addEventListener('DOMContentLoaded', () => {
       form.reset();
     });
   }
+
+  // Section scroll reveal animation
+  function revealSections() {
+    const sections = document.querySelectorAll('.section-animate');
+    const trigger = window.innerHeight * 0.90;
+    sections.forEach(section => {
+      const top = section.getBoundingClientRect().top;
+      if(top < trigger) section.classList.add('visible');
+    });
+  }
+  window.addEventListener('scroll', revealSections);
+  revealSections(); // Initial check
 });
