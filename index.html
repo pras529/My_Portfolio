@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Prashant</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,46 +17,36 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#certificates">Certificates</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
-
 <main>
-    <!-- Replace the #home section with the code below -->
-<section id="home">
-  <div class="container home-content">
-    <div class="home-social">
-      <a href="https://www.linkedin.com/in/pras529" target="_blank" class="home-social-icon" aria-label="LinkedIn">
-        <!-- LinkedIn SVG -->
-        <svg width="28" height="28" fill="none" stroke="#6c63ff" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v5h-4v-5a2 2 0 0 0-2-2 2 2 0 0 0-2 2v5h-4v-9h4v1.4"></path><rect width="4" height="9" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-      </a>
-      <a href="https://leetcode.com/prash529" target="_blank" class="home-social-icon" aria-label="LeetCode">
-        <!-- LeetCode SVG -->
-        <svg width="28" height="28" fill="none" stroke="#6c63ff" stroke-width="2" viewBox="0 0 32 32"><path d="M19.6 12.1C18.3 10.5 16.8 9.5 14.8 9.5c-1.5 0-2.8 1.1-3.6 2.1-1.3 1.7-1.6 4-1.6 6.4 0 2.5.3 4.7 1.5 6.2.8 1.2 2.1 2.3 3.7 2.3 2 0 3.5-1.1 4.7-2.7"/><path d="M23.1 12.1c0-2.6-1.9-4.6-4.7-4.6-2.5 0-4.5 1.7-5.8 3.5C10 12.4 9.5 14 9.5 16c0 1.9.5 3.6 1.6 5 1.3 1.8 3.2 3.5 5.8 3.5 2.8 0 4.7-2 4.7-4.6"/><circle cx="25" cy="7" r="2"></circle></svg>
-      </a>
-      <a href="https://github.com/pras529" target="_blank" class="home-social-icon" aria-label="GitHub">
-        <!-- GitHub SVG -->
-        <svg width="28" height="28" fill="none" stroke="#6c63ff" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.489.5.091.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.153-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.004.071 1.532 1.032 1.532 1.032.892 1.529 2.341 1.088 2.91.833.091-.647.35-1.088.636-1.338-2.221-.253-4.555-1.112-4.555-4.951 0-1.093.39-1.987 1.029-2.686-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.843c.85.004 1.705.115 2.504.338 1.909-1.294 2.748-1.025 2.748-1.025.545 1.378.202 2.397.099 2.65.64.699 1.028 1.593 1.028 2.686 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .269.18.577.688.479C19.135 20.163 22 16.415 22 12c0-5.523-4.477-10-10-10z"></path></svg>
-      </a>
-    </div>
-    <div class="home-text">
-      <h1>Hi, I'm Prashant</h1>
-      <h2>Fullstack Developer</h2>
-      <p>High level experience in web design and development, producing quality work.</p>
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
-    <!-- Replace ONLY the .home-img and .profile-ellipse part of your #home section with this: -->
-<div class="home-img">
-  <img src="/profile.JPG" alt="Profile photo" class="profile-img-no-bg">
-</div>
-  </div>
-</section>
-
+    <!-- HOME -->
+    <section id="home">
+        <div class="container home-content">
+            <div class="home-social">
+                <a href="https://www.linkedin.com/in/pras529" target="_blank" class="home-social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://leetcode.com/prash529" target="_blank" class="home-social-icon" aria-label="LeetCode"><i class="bi bi-code-slash"></i></a>
+                <a href="https://github.com/pras529" target="_blank" class="home-social-icon" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            </div>
+            <div class="home-text">
+                <h1>Hi, I'm Prashant</h1>
+                <h2>Fullstack Developer</h2>
+                <p>High level experience in web design and development, producing quality work.</p>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+            <div class="home-img">
+                <img src="profile.JPG" alt="Profile photo" class="profile-img-no-bg">
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT -->
     <section id="about">
         <div class="container about-content">
             <div class="about-img">
-                <img src="/profile.JPG" alt="Profile">
+                <img src="profile.JPG" alt="Profile">
             </div>
             <div class="about-details">
                 <h2>About Me</h2>
@@ -67,122 +58,95 @@
                     <div><span>20+</span><br>Completed projects</div>
                     <div><span>5+</span><br>Companies worked</div>
                 </div>
-                <a href="/resume.pdf" class="btn" download>Download CV</a>
+                <a href="resume.pdf" class="btn" download>Download CV</a>
             </div>
         </div>
     </section>
-
+    <!-- SKILLS -->
     <section id="skills">
         <div class="container">
             <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <div class="skill-title">HTML</div>
-                    <div class="progress">
-                        <div style="width: 90%;"></div>
+            <div class="skills-grid">
+                <!-- Each skill: icon + label -->
+                <div class="skill-card"><i class="bi bi-filetype-html"></i><span>HTML5</span></div>
+                <div class="skill-card"><i class="bi bi-filetype-css"></i><span>CSS3</span></div>
+                <div class="skill-card"><i class="bi bi-filetype-js"></i><span>JavaScript</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" /><span>React</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next JS"/><span>Next JS</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS"/><span>NodeJS</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart"/><span>Dart</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"/><span>Flutter</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/><span>Python</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI"/><span>FastAPI</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"/><span>C++</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/><span>MongoDB</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="Postgres"/><span>Postgres</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"/><span>NumPy</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"/><span>Pandas</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"/><span>TensorFlow</span></div>
+                <div class="skill-card"><i class="bi bi-github"></i><span>GitHub</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/><span>Docker</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman"/><span>Postman</span></div>
+                <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud"/><span>Google Cloud</span></div>
+            </div>
+        </div>
+    </section>
+    <!-- QUALIFICATION (as in previous version) -->
+    <section id="qualification">
+        <div class="container qualification-container">
+            <h2>Qualification</h2>
+            <p class="subtitle">My personal journey</p>
+            <div class="qualification-tabs">
+                <button class="tab active" data-tab="education"><i class="bi bi-mortarboard"></i> Education</button>
+                <button class="tab" data-tab="work"><i class="bi bi-briefcase"></i> Work</button>
+            </div>
+            <div class="qualification-content">
+                <!-- Timeline -->
+                <div class="qualification-timeline" id="education-timeline">
+                    <div class="qualification-data left">
+                        <h3>Bachelors in Information Technology</h3>
+                        <span class="qualification-subtitle">Bharati Vidyapeeth's college of engineering</span>
+                        <div class="qualification-calendar">
+                            <i class="bi bi-calendar2-week"></i> 2022 - 2026
+                        </div>
                     </div>
+                    <div class="qualification-divider"></div>
                 </div>
-                <div class="skill">
-                    <div class="skill-title">CSS</div>
-                    <div class="progress">
-                        <div style="width: 85%;"></div>
+                <!-- Work Timeline -->
+                <div class="qualification-timeline" id="work-timeline" style="display:none;">
+                    <div class="qualification-data right">
+                        <h3>Full stack Developer</h3>
+                        <span class="qualification-subtitle">iTinker - Company</span>
+                        <div class="qualification-calendar">
+                            <i class="bi bi-calendar2-week"></i> 06/2024 - 08/2024
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-title">JavaScript</div>
-                    <div class="progress">
-                        <div style="width: 80%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-title">React</div>
-                    <div class="progress">
-                        <div style="width: 75%;"></div>
-                    </div>
+                    <div class="qualification-divider"></div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Add this section after the Skills section and before Portfolio -->
-    <!-- Replace your current qualification section with the following: -->
-<section id="qualification">
-  <div class="container qualification-container">
-    <h2>Qualification</h2>
-    <p class="subtitle">My personal journey</p>
-    <div class="qualification-tabs">
-      <button class="tab active" data-tab="education">
-        <svg width="22" height="22" fill="none" stroke="#6c63ff" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><path d="M12 3L2 9l10 6 10-6-10-6z"/><path d="M2 17c0-2.5 7-4 10-4s10 1.5 10 4"/><path d="M2 17v2c0 2.5 7 4 10 4s10-1.5 10-4v-2"/></svg>
-        Education
-      </button>
-      <button class="tab" data-tab="work">
-        <svg width="22" height="22" fill="none" stroke="#6c63ff" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:4px;"><path d="M3 7V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v1"/><rect width="18" height="13" x="3" y="17" rx="2"/><path d="M16 21v-2a4 4 0 0 0-8 0v2"/></svg>
-        Work
-      </button>
-    </div>
-    <div class="qualification-content">
-      <!-- Timeline -->
-      <div class="qualification-timeline" id="education-timeline">
-        <div class="qualification-data left">
-          <h3>Bachelors in  information Technology</h3>
-          <span class="qualification-subtitle">Bharati Vidyapeeth's college of engineering</span>
-          <div class="qualification-calendar">
-            <svg width="18" height="18" fill="none" stroke="#6c63ff" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:3px;"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-            2022 - 2026
-          </div>
-        </div>
-        <div class="qualification-divider"></div>
-
-
-      </div>
-      <!-- Work Timeline -->
-      <div class="qualification-timeline" id="work-timeline" style="display:none;">
-        <div class="qualification-data right">
-          <h3>Full stack Developer</h3>
-          <span class="qualification-subtitle">iTinker - Company</span>
-          <div class="qualification-calendar">
-            <svg width="18" height="18" fill="none" stroke="#6c63ff" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:3px;"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-            06/2024 - 08/2024
-          </div>
-        </div>
-        <div class="qualification-divider"></div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-    <!-- Certificates Section: Place after the Qualification section -->
+    <!-- CERTIFICATES - ENHANCED -->
     <section id="certificates">
         <div class="container certificates-container">
             <h2>Certificates</h2>
             <p class="subtitle">My Achievements & Certifications</p>
-            <div class="certificates-slider" id="certificatesSlider">
-                <button class="slider-arrow left" id="certLeft">&#10094;</button>
-                <div class="certificates-track" id="certificatesTrack">
-                    <div class="certificate-card">
-                        <img src="/certificate1.png" alt="Certificate 1">
-                        <h3>Full Stack Web Developer</h3>
-                        <p>Coursera, 2023</p>
-                    </div>
-                    <div class="certificate-card">
-                        <img src="certificate2.jpg" alt="Certificate 2">
-                        <h3>Responsive Web Design</h3>
-                        <p>freeCodeCamp, 2022</p>
-                    </div>
-                    <div class="certificate-card">
-                        <img src="certificate3.jpg" alt="Certificate 3">
-                        <h3>JavaScript Algorithms</h3>
-                        <p>Udemy, 2024</p>
-                    </div>
-                    <!-- Add more certificate cards as needed -->
+            <div class="certificates-gallery">
+                <div class="certificate-card">
+                    <img src="certificate1.png" alt="Python Internship Certificate" class="certificate-thumbnail" data-full="certificate1.png">
+                    <h3>Programming in Python Internship</h3>
+                    <p>NIELIT Haridwar, 2023</p>
                 </div>
-                <button class="slider-arrow right" id="certRight">&#10095;</button>
+                <!-- You can add more certificates as needed, just copy the card structure -->
+            </div>
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox">
+                <span class="close-lightbox">&times;</span>
+                <img class="lightbox-content" id="lightbox-img" alt="Full Certificate">
             </div>
         </div>
     </section>
-
-
+    <!-- PORTFOLIO (Projects) -->
     <section id="portfolio">
         <div class="container">
             <h2>Portfolio</h2>
@@ -191,33 +155,40 @@
                     <img src="project1.jpg" alt="Project 1">
                     <h3>Project Title 1</h3>
                     <p>Short description of the project.</p>
+                    <a href="#" class="project-link" target="_blank">View Project</a>
                 </div>
                 <div class="portfolio-item">
                     <img src="project2.jpg" alt="Project 2">
                     <h3>Project Title 2</h3>
                     <p>Short description of the project.</p>
+                    <a href="#" class="project-link" target="_blank">View Project</a>
                 </div>
                 <!-- Add more portfolio items as needed -->
             </div>
         </div>
     </section>
-
+    <!-- CONTACT -->
     <section id="contact">
         <div class="container contact-container">
             <h2>Contact Me</h2>
             <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+                <label>
+                    <input type="text" placeholder="Your Name" required>
+                </label>
+                <label>
+                    <input type="email" placeholder="Your Email" required>
+                </label>
+                <label>
+                    <textarea placeholder="Your Message" required></textarea>
+                </label>
                 <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
     </section>
 </main>
-
 <footer>
     <div class="container">
-        <p>© 2025 Pras529. All Rights Reserved.</p>
+        <p>&copy; 2025 Prashant. All Rights Reserved.</p>
     </div>
 </footer>
 <script src="script.js"></script>
