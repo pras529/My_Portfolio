@@ -11,7 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Qualification tab switcher
+// Qualification tab switcher (replace this block in script.js)
 document.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelectorAll('.qualification-tabs .tab');
   const educationTimeline = document.getElementById('education-timeline');
@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
       tabs.forEach(t => t.classList.remove('active'));
       this.classList.add('active');
       if (this.dataset.tab === "education") {
-        educationTimeline.style.display = "block";
+        educationTimeline.style.display = "flex";
         workTimeline.style.display = "none";
       } else {
         educationTimeline.style.display = "none";
-        workTimeline.style.display = "block";
+        workTimeline.style.display = "flex";
       }
     });
   });
