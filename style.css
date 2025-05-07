@@ -166,6 +166,7 @@ nav {
   justify-content: center;
   z-index: 1;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .home-img {
@@ -270,6 +271,7 @@ nav {
   cursor: pointer;
   transition: background .23s, color .23s;
   font-family: 'Playfair Display', 'Poppins', serif;
+  
 }
 .btn-premium:hover,
 .btn-premium:focus {
@@ -293,6 +295,7 @@ nav {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin:10px;
 }
 .about-img img {
   width: 180px;
@@ -312,6 +315,7 @@ nav {
   margin-bottom: 12px;
   color: var(--accent);
   font-family: 'Playfair Display', 'Poppins', serif;
+  padding-left: 310px;
 }
 .about-details p {
   margin-bottom: 16px;
@@ -398,6 +402,15 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  
+}
+#qualification h2{
+  margin-bottom: 30px;
+  font-size: 2.1rem;
+  color: var(--accent);
+  text-align: center;
+  font-family: 'Playfair Display', 'Poppins', serif;
+
 }
 .qualification-timeline {
   position: relative;
@@ -433,6 +446,12 @@ nav {
   color: var(--champagne);
   margin-bottom: 6px;
   display: block;
+  
+
+
+}
+.subtitle{
+  text-align: center;
 }
 .qualification-calendar {
   display: flex;
@@ -473,6 +492,12 @@ nav {
   right: -20px;
 }
 
+.qualification-data.left{
+  padding-right: 15px;
+}
+.qualification-data.right{
+  padding-left: 15px;
+}
 @media (max-width: 800px) {
   .qualification-timeline { width: 98vw; min-width: unset; flex-direction: column; }
   .qualification-data, .qualification-data.right {
@@ -605,9 +630,9 @@ nav {
   background: var(--champagne);
 }
 
-.carousel-btn.prev {
+/* .carousel-btn.prev {
   left: 10px;
-}
+} */
 
 .carousel-btn.next {
   right: 10px;
@@ -654,6 +679,37 @@ nav {
 .close-lightbox:hover {
   color: var(--accent);
 }
+
+#work-experience h2 {
+  margin-bottom: 30px;
+  font-size: 2.1rem;
+  color: var(--accent);
+  text-align: center;
+  font-family: 'Playfair Display', 'Poppins', serif;
+}
+#work-experience img {
+  width:500px;
+  height:550px;
+}
+
+/* Style the certificate-card container */
+.certificate-card {
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  flex-direction: column;   
+  text-align: center;       
+}
+
+/* Style the image to ensure it is centered */
+.certificate-card img {
+  max-width: 100%;         
+  height: auto;             
+  margin: 0 auto;           
+}
+
+
+
 /* Portfolio Section */
 #portfolio h2 {
   margin-bottom: 24px;
@@ -738,6 +794,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  
 }
 form input, form textarea {
   font-size: 1rem;
@@ -748,6 +805,8 @@ form input, form textarea {
   color: var(--white);
   resize: none;
   transition: border .18s;
+  text-align: center;
+  width: 450px;
 }
 form input:focus, form textarea:focus {
   outline: none;
@@ -757,9 +816,11 @@ form textarea {
   min-height: 100px;
 }
 form .btn {
-  align-self: flex-end;
+  /* align-self: flex-start; */
   margin-top: 4px;
+  text-align: center;
 }
+
 
 /* Footer */
 footer {
