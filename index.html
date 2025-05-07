@@ -13,12 +13,9 @@
   <nav class="container">
     <div class="logo">Prashant</div>
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#certificates">Certificates</a></li>
-      <li><a href="#work-experience">Work Experience</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -26,16 +23,17 @@
 <main>
   <!-- HOME SECTION -->
   <section id="home">
-     <div class="skills-float-bg-icons">
+    <div class="skills-float-bg-icons">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="float-skill-icon" style="top:10%;left:15%;" alt="Python"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="float-skill-icon" style="top:30%;left:70%;" alt="React"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" class="float-skill-icon" style="top:15%;left:70%;" alt="Dart"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="float-skill-icon" style="top:10%;left:80%;" alt="React"/>
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="float-skill-icon" style="top:60%;left:14%;" alt="NodeJS"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" class="float-skill-icon" style="top:74%;left:60%;" alt="TensorFlow"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="float-skill-icon" style="top:80%;left:36%;" alt="JavaScript"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" class="float-skill-icon" style="top:74%;left:75%;" alt="TensorFlow"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="float-skill-icon" style="top:85%;left:26%;" alt="JavaScript"/>
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="float-skill-icon" style="top:25%;left:36%;" alt="MongoDB"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="float-skill-icon" style="top:50%;left:80%;" alt="Docker"/>
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="float-skill-icon" style="top:55%;left:55%;" alt="CSS3"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="float-skill-icon" style="top:30%;left:70%;" alt="Docker"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="float-skill-icon" style="top:55%;left:85%;" alt="CSS3"/>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" class="float-skill-icon" style="top:35%;left:20%;" alt="CSS3"/>
+
     </div>
     <div class="container home-content home-centered">
       <div class="home-img">
@@ -58,7 +56,7 @@
   <section id="about" class="section-animate">
     <div class="container about-content">
       <div class="about-img">
-        <img src="profile.JPG" alt="Profile">
+        <img src="Profile2.png" alt="Profile">
       </div>
       <div class="about-details">
         <h2>About Me</h2>
@@ -79,9 +77,9 @@
     <div class="container">
       <h2>Skills</h2>
       <div class="skills-grid">
-        <div class="skill-card"><i class="bi bi-filetype-html"></i><span>HTML5</span></div>
-        <div class="skill-card"><i class="bi bi-filetype-css"></i><span>CSS3</span></div>
-        <div class="skill-card"><i class="bi bi-filetype-js"></i><span>JavaScript</span></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" /><span>HTML</span></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" /><span>CSS</span></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /><span>JavaScript</span></div>
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" /><span>React</span></div>
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next JS"/><span>Next JS</span></div>
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS"/><span>NodeJS</span></div>
@@ -128,24 +126,38 @@
       </div>
     </div>
   </section>
-  <!-- CERTIFICATES -->
-  <section id="certificates" class="section-animate">
-    <div class="container certificates-container">
-      <h2>Certificates</h2>
-      <p class="subtitle">My Achievements & Certifications</p>
-      <div class="certificates-gallery">
-        <div class="certificate-card">
-          <img src="certificate1.png" alt="Python Internship Certificate" class="certificate-thumbnail" data-full="certificate1.png">
-          <h3>Programming in Python Internship</h3>
-          <p>NIELIT Haridwar, 2023</p>
-        </div>
+  <!-- CERTIFICATES SECTION -->
+<section id="certificates" class="section-animate">
+  <div class="container certificates-container">
+    <h2>Certificates</h2>
+    <p class="subtitle">My Achievements & Certifications</p>
+    <div class="carousel">
+      <button class="carousel-btn prev" aria-label="Previous Certificate">&#10094;</button>
+      <div class="carousel-track-container">
+        <ul class="carousel-track">
+          <!-- Certificate 1 -->
+          <li class="carousel-slide current-slide">
+            <img src="certificate1.png" alt="Python Internship Certificate" class="certificate-thumbnail" data-full="certificate1.png">
+            <h3>Programming in Python Internship</h3>
+            <p>NIELIT Haridwar, 2023</p>
+          </li>
+          <!-- Certificate 2 -->
+          <li class="carousel-slide">
+            <img src="certificate2.png" alt="Data Analytics and Visualization Job Simulation Certificate" class="certificate-thumbnail" data-full="certificate2.png">
+            <h3>Data Analytics and Visualization</h3>
+            <p>Accenture & Forage, 2024</p>
+          </li>
+        </ul>
       </div>
-      <div id="lightbox" class="lightbox">
-        <span class="close-lightbox">&times;</span>
-        <img class="lightbox-content" id="lightbox-img" alt="Full Certificate">
-      </div>
+      <button class="carousel-btn next" aria-label="Next Certificate">&#10095;</button>
     </div>
-  </section>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close-lightbox" aria-label="Close Lightbox">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" alt="Full Certificate" src="">
+    </div>
+  </div>
+</section>
   <!-- WORK EXPERIENCE CERTIFICATES -->
   <section id="work-experience" class="section-animate">
     <div class="container certificates-container">
