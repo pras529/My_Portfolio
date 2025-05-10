@@ -539,6 +539,7 @@ nav {
   .certificate-card { min-width: 140px; max-width: 98vw; padding: 10px 4px; }
   .close-lightbox { right: 10px; font-size: 2.1rem; top: 8px; }
 }
+
 /* Certificates Section */
 #certificates {
   background: var(--card-bg);
@@ -859,3 +860,242 @@ footer {
   .certificate-card { min-width: 140px; max-width: 98vw; padding: 10px 4px; }
   .close-lightbox { right: 10px; font-size: 2.1rem; top: 8px; }
 }
+
+
+
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+#lightbox-img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+/* Base styles already apply to desktop; these are for responsiveness */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .qualification-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qualification-tabs .tab {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .carousel-track {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .carousel-track .slide {
+    min-width: 100%; /* Show 1 slide at a time */
+    flex-shrink: 0;
+  }
+
+  .carousel-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .lightbox-img {
+    max-width: 90vw;
+    max-height: 80vh;
+  }
+
+  .section-animate {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Phones (480px and below) */
+@media (max-width: 480px) {
+  .carousel-btn {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .qualification-tabs {
+    padding: 0 10px;
+  }
+
+  .lightbox-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .tab, .section-animate, .timeline-item {
+    font-size: 14px;
+  }
+
+  .certificate-thumbnail {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------- Responsive Design ------------------- */
+
+/* Tablets and smaller */
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    padding: 6px 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .about-details h2 {
+    padding-left: 0;
+  }
+
+  .about-img img {
+    width: 140px;
+  }
+
+  .profile-img-premium {
+    width: 180px;
+    height: 180px;
+  }
+
+  .home-social {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-social a {
+    font-size: 18px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+  .nav-links {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .home-content h1 {
+    font-size: 28px;
+  }
+
+  .home-content h3 {
+    font-size: 16px;
+  }
+
+  .about-content {
+    padding: 30px 15px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .section-description {
+    font-size: 14px;
+  }
+
+  .home-social {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home-social a {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
