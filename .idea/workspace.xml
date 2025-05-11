@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b46adba-3a2e-42c4-b1a7-33f9b54fe7a0" name="Changes" comment="First commit of Project">
+    <list default="true" id="1b46adba-3a2e-42c4-b1a7-33f9b54fe7a0" name="Changes" comment="strctured the Project">
+      <change afterPath="$PROJECT_DIR$/Prashant's_Resume.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/project4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Profile2.png" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/Profile2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/certificate1.png" beforeDir="false" afterPath="$PROJECT_DIR$/certificates/certificate1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/certificate2.png" beforeDir="false" afterPath="$PROJECT_DIR$/certificates/certificate2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/certificate3.png" beforeDir="false" afterPath="$PROJECT_DIR$/certificates/certificate3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/certificate4.png" beforeDir="false" afterPath="$PROJECT_DIR$/certificates/certificate4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/certificate5.png" beforeDir="false" afterPath="$PROJECT_DIR$/certificates/certificate5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/profile.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile3.png" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/profile3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile4.png" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/profile4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1.png" beforeDir="false" afterPath="$PROJECT_DIR$/projects/project1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project2.png" beforeDir="false" afterPath="$PROJECT_DIR$/projects/project2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project3.png" beforeDir="false" afterPath="$PROJECT_DIR$/projects/project3.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,24 +48,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/prash/PycharmProjects/My_Portfolio&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/prash/PycharmProjects/My_Portfolio/projects",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\prash\PycharmProjects\My_Portfolio\projects" />
       <recent name="C:\Users\prash\PycharmProjects\My_Portfolio" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -107,7 +98,8 @@
       <workItem from="1746454828136" duration="6108000" />
       <workItem from="1746610393252" duration="6440000" />
       <workItem from="1746622081686" duration="5491000" />
-      <workItem from="1746870189545" duration="121000" />
+      <workItem from="1746870189545" duration="244000" />
+      <workItem from="1746962145901" duration="2039000" />
     </task>
     <task id="LOCAL-00001" summary="First commit of Project">
       <option name="closed" value="true" />
@@ -173,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746634302824</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="strctured the Project">
+      <option name="closed" value="true" />
+      <created>1746870369673</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746870369673</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +198,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit of Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit of Project" />
+    <MESSAGE value="strctured the Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="strctured the Project" />
   </component>
 </project>
