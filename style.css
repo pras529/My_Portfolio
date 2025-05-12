@@ -965,20 +965,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------- Responsive Design ------------------- */
 
 /* Tablets and smaller */
@@ -1034,6 +1020,10 @@ footer {
   }
 }
 
+.carousel-btn.prev {
+  display: none;
+}
+
 /* Mobile Phones */
 @media (max-width: 768px) {
   .nav-links {
@@ -1079,23 +1069,6 @@ footer {
     font-size: 16px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
