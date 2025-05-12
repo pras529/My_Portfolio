@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b46adba-3a2e-42c4-b1a7-33f9b54fe7a0" name="Changes" comment="strctured the Project">
-      <change afterPath="$PROJECT_DIR$/Prashant's_Resume.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/project4.png" afterDir="false" />
+    <list default="true" id="1b46adba-3a2e-42c4-b1a7-33f9b54fe7a0" name="Changes" comment="Added Certificates , Projects">
+      <change afterPath="$PROJECT_DIR$/certificates/certificate6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/certificates/certificate7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/certificates/certificate8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/certificates/certificate9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -23,6 +25,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -55,7 +58,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/prash/PycharmProjects/My_Portfolio/projects",
+    "last_opened_file_path": "C:/Users/prash/PycharmProjects/My_Portfolio/certificates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,6 +69,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\prash\PycharmProjects\My_Portfolio\certificates" />
       <recent name="C:\Users\prash\PycharmProjects\My_Portfolio\projects" />
       <recent name="C:\Users\prash\PycharmProjects\My_Portfolio" />
     </key>
@@ -99,7 +103,8 @@
       <workItem from="1746610393252" duration="6440000" />
       <workItem from="1746622081686" duration="5491000" />
       <workItem from="1746870189545" duration="244000" />
-      <workItem from="1746962145901" duration="2039000" />
+      <workItem from="1746962145901" duration="2601000" />
+      <workItem from="1747049698875" duration="1057000" />
     </task>
     <task id="LOCAL-00001" summary="First commit of Project">
       <option name="closed" value="true" />
@@ -173,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746870369673</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added Certificates , Projects">
+      <option name="closed" value="true" />
+      <created>1746982711085</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1746982711085</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +212,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit of Project" />
     <MESSAGE value="strctured the Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="strctured the Project" />
+    <MESSAGE value="Added Certificates , Projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Certificates , Projects" />
   </component>
 </project>
