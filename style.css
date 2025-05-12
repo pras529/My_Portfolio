@@ -1,3 +1,20 @@
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+
 :root {
   --black: #111112;
   --deep-black: #080808;
@@ -1206,7 +1223,7 @@ footer {
 }
 
 /* Add to very top of your CSS */
-html {
+/* html {
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -1219,5 +1236,4 @@ body {
   overflow-x: hidden;
   position: relative;
   width: 100vw;
-}
-
+} */

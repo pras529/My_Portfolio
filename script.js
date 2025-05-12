@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
   // Carousel Functionality
   const track = document.querySelector(".carousel-track");
   const slides = Array.from(track.children);
@@ -87,9 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-  
 
 
 
