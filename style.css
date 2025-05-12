@@ -316,7 +316,8 @@ nav {
   margin-bottom: 12px;
   color: var(--accent);
   font-family: 'Playfair Display', 'Poppins', serif;
-  padding-left: 310px;
+  padding-left: 0px;
+  text-align:left;
 }
 .about-details p {
   margin-bottom: 16px;
@@ -1070,5 +1071,152 @@ footer {
   }
 }
 
+/* RESPONSIVENESS - PHONES AND PTHER DEVICES */
 
+/* Global Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Center align all section content */
+  section {
+    text-align: center !important;
+  }
+  
+  /* Container adjustments */
+  .container {
+    padding: 0 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Reset all flex directions to column */
+  [class*="flex"], 
+  .about-content, 
+  .portfolio-container, 
+  .contact-container,
+  .home-content {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  /* Remove any fixed widths */
+  [class*="width"], 
+  .portfolio-item, 
+  .about-img img, 
+  form input, 
+  form textarea {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Adjust section padding */
+  #about, #contact, #portfolio {
+    padding: 40px 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .about-details {
+    text-align: center;
+    padding: 0 !important;
+  }
+  
+  .about-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .about-stats div {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 0 20px;
+  }
+  
+  form {
+    width: 100%;
+  }
+  
+  form input, 
+  form textarea {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  
+  .btn-premium {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: 1fr !important;
+    gap: 25px;
+    padding: 0 15px;
+  }
+  
+  .portfolio-item {
+    width: 100% !important;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px !important;
+  }
+  
+  .portfolio-item:hover {
+    transform: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Even smaller screens */
+  .home-text h1 {
+    font-size: 2rem !important;
+  }
+  
+  .home-text h2 {
+    font-size: 1.1rem !important;
+  }
+  
+  .profile-img-premium {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  
+  .skill-card {
+    width: 120px !important;
+  }
+  
+  .portfolio-item {
+    padding: 15px !important;
+  }
+  
+  form input, form textarea {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Add to very top of your CSS */
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+}
 
