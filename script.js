@@ -33,91 +33,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // Carousel Functionality
-  // const track = document.querySelector(".carousel-track");
-  // const slides = Array.from(track.children);
-  // const nextButton = document.querySelector(".carousel-btn.next");
-  // const prevButton = document.querySelector(".carousel-btn.prev");
+  const track = document.querySelector(".carousel-track");
+  const slides = Array.from(track.children);
+  const nextButton = document.querySelector(".carousel-btn.next");
+  const prevButton = document.querySelector(".carousel-btn.prev");
 
-  // // const slideWidth = slides[0].getBoundingClientRect().width;
-  // // slides.forEach((slide, index) => {
-  // //   slide.style.left = slideWidth * index + "px";
-  // // });
-
-
-
-
-
-  // const setSlidePositions = () => {
-  //   const slideWidth = slides[0].getBoundingClientRect().width;
-  //   slides.forEach((slide, index) => {
-  //     slide.style.left = slideWidth * index + "px";
-  //   });
-  
-  //   // Optional: re-adjust carousel to current slide after resize
-  //   const currentSlide = track.querySelector(".current-slide");
-  //   track.style.transform = "translateX(-" + currentSlide.style.left + ")";
-  // };
-  
-  // window.addEventListener("resize", setSlidePositions);
-  // setSlidePositions(); // Initial setup
-  
-
-
-
-
-
-  // const moveToSlide = (track, currentSlide, targetSlide) => {
-  //   track.style.transform = "translateX(-" + targetSlide.style.left + ")";
-  //   currentSlide.classList.remove("current-slide");
-  //   targetSlide.classList.add("current-slide");
-  // };
-
-  // slides[0].classList.add("current-slide");
-
-  // nextButton.addEventListener("click", () => {
-  //   const currentSlide = track.querySelector(".current-slide");
-  //   const nextSlide = currentSlide.nextElementSibling || slides[0];
-  //   moveToSlide(track, currentSlide, nextSlide);
-  // });
-
-  // prevButton.addEventListener("click", () => {
-  //   const currentSlide = track.querySelector(".current-slide");
-  //   const prevSlide = currentSlide.previousElementSibling || slides[slides.length - 1];
-  //   moveToSlide(track, currentSlide, prevSlide);
+  // const slideWidth = slides[0].getBoundingClientRect().width;
+  // slides.forEach((slide, index) => {
+  //   slide.style.left = slideWidth * index + "px";
   // });
 
 
 
 
 
-const track = document.querySelector(".carousel-track");
-const slides = Array.from(track.children);
-const nextButton = document.querySelector(".carousel-btn.next");
-const prevButton = document.querySelector(".carousel-btn.prev");
+  const setSlidePositions = () => {
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    slides.forEach((slide, index) => {
+      slide.style.left = slideWidth * index + "px";
+    });
+  
+    // Optional: re-adjust carousel to current slide after resize
+    const currentSlide = track.querySelector(".current-slide");
+    track.style.transform = "translateX(-" + currentSlide.style.left + ")";
+  };
+  
+  window.addEventListener("resize", setSlidePositions);
+  setSlidePositions(); // Initial setup
+  
 
-let currentIndex = 0;
 
-function updateCarousel() {
-  const slideWidth = slides[0].getBoundingClientRect().width;
-  track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
 
-  slides.forEach(slide => slide.classList.remove("current-slide"));
-  if (slides[currentIndex]) slides[currentIndex].classList.add("current-slide");
-}
 
-// Initial setup and resize adjustment
-window.addEventListener("resize", updateCarousel);
-updateCarousel();
 
-nextButton.addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % slides.length;
-  updateCarousel();
-});
+  const moveToSlide = (track, currentSlide, targetSlide) => {
+    track.style.transform = "translateX(-" + targetSlide.style.left + ")";
+    currentSlide.classList.remove("current-slide");
+    targetSlide.classList.add("current-slide");
+  };
 
-prevButton.addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  updateCarousel();
-});
+  slides[0].classList.add("current-slide");
+
+  nextButton.addEventListener("click", () => {
+    const currentSlide = track.querySelector(".current-slide");
+    const nextSlide = currentSlide.nextElementSibling || slides[0];
+    moveToSlide(track, currentSlide, nextSlide);
+  });
+
+  prevButton.addEventListener("click", () => {
+    const currentSlide = track.querySelector(".current-slide");
+    const prevSlide = currentSlide.previousElementSibling || slides[slides.length - 1];
+    moveToSlide(track, currentSlide, prevSlide);
+  });
+
+
+
 
 
 
