@@ -594,19 +594,11 @@ nav {
   overflow: hidden;
   position: relative;
 
-
-  width:100%;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
-
-
-  padding:0;
-  margin:0;
   
 }
 
@@ -614,8 +606,6 @@ nav {
   min-width: 100%;
   list-style: none;
   text-align: center;
-
-  flex-shrink: 0;
 }
 
 .carousel-slide img {
