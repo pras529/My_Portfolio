@@ -593,13 +593,11 @@ nav {
 .carousel-track-container {
   overflow: hidden;
   position: relative;
-
 }
 
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  
 }
 
 .carousel-slide {
@@ -721,7 +719,6 @@ nav {
   box-shadow: 0 4px 16px #000a;
   display: block;
   margin: 0 auto;
-
 }
 
 /* Style the certificate-card container */
@@ -1100,7 +1097,7 @@ footer {
   }
 }
 
-/* RESPONSIVENESS - PHONES AND OTHER DEVICES */
+/* RESPONSIVENESS - PHONES AND PTHER DEVICES */
 
 /* Global Mobile Responsiveness */
 @media (max-width: 768px) {
