@@ -1,6 +1,10 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
+  const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+  const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+
   // Smooth scrolling for nav links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -60,10 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
   window.addEventListener("resize", setSlidePositions);
   setSlidePositions(); // Initial setup
-  
-
-
-
 
 
   const moveToSlide = (track, currentSlide, targetSlide) => {
@@ -87,46 +87,52 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  if (window.emailjs && EMAILJS_PUBLIC_KEY) {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+  }
 
-
-
-  
-
-  // Lightbox Functionality
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const closeLightbox = document.querySelector(".close-lightbox");
-
-  document.querySelectorAll(".certificate-thumbnail").forEach((img) => {
-    img.addEventListener("click", function () {
-      lightbox.style.display = "flex";
-      lightboxImg.src = this.dataset.full || this.src;
-      lightboxImg.alt = this.alt || "Full Certificate";
-      document.body.style.overflow = "hidden";
-    });
-  });
-
-  closeLightbox.onclick = function () {
-    lightbox.style.display = "none";
-    lightboxImg.src = "";
-    document.body.style.overflow = "";
-  };
-
-  lightbox.addEventListener("click", function (e) {
-    if (e.target === this) {
-      lightbox.style.display = "none";
-      lightboxImg.src = "";
-      document.body.style.overflow = "";
-    }
-  });
-
-  // Contact form
-  const form = document.querySelector('#contact form');
-  if(form){
-    form.addEventListener('submit', function(e){
+  const form = document.querySelector('#contact-form');
+  if (form) {
+    const submitBtn = form.querySelector('button[type="submit"]');
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      alert('Thank you for reaching out! Your message has been received.');
-      form.reset();
+
+      if (!window.emailjs) {
+        alert('Email service not loaded. Please check your network.');
+        return;
+      }
+
+      if (
+        EMAILJS_SERVICE_ID.startsWith('YOUR_') ||
+        EMAILJS_TEMPLATE_ID.startsWith('YOUR_') ||
+        EMAILJS_PUBLIC_KEY.startsWith('YOUR_')
+      ) {
+        alert('Please configure EmailJS service, template, and public key.');
+        return;
+      }
+
+      const userName = form.querySelector('input[name="user_name"]').value.trim();
+      const userEmail = form.querySelector('input[name="user_email"]').value.trim();
+      const message = form.querySelector('textarea[name="message"]').value.trim();
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      try {
+        await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+          user_name: userName,
+          user_email: userEmail,
+          message
+        });
+        alert('Message sent! I will get back to you soon.');
+        form.reset();
+      } catch (err) {
+        console.error('EmailJS error:', err);
+        alert('Failed to send. Please try again later.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+      }
     });
   }
 
