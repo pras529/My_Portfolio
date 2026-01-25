@@ -1,9 +1,9 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const EMAILJS_SERVICE_ID = service_pdkrpek;
-  const EMAILJS_TEMPLATE_ID = template_86f9egk;
-  const EMAILJS_PUBLIC_KEY = UKtVGVh1yhk2Kd3J5;
+  const EMAILJS_SERVICE_ID = 'service_pdkrpek';
+  const EMAILJS_TEMPLATE_ID = 'template_86f9egk';
+  const EMAILJS_PUBLIC_KEY = 'UKtVGVh1yhk2Kd3J5';
 
   // Smooth scrolling for nav links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
